@@ -138,20 +138,23 @@
 
             <div class="computer only four wide column">
                 <h3 style="text-align:center">Contact us about this listing:</h3>
-                <form class="ui form">
+                <form id="gform" class="ui form" method="POST" action="https://script.google.com/macros/s/AKfycbydFhrLdldgJB1Oh5-S-kt46RfOHGk5m9HquQ7sH-ZHmeiXdII/exec">
                     <div class="field">
-                        <input type="text" name="name" placeholder="Your Name">
+                        <input type="text" id="name" name="name" placeholder="Your Name">
                     </div>
                     <div class="field">
-                        <input type="text" name="email" placeholder="Your Email">
+                        <input type="text" id="email" name="email" placeholder="Your Email">
                     </div>
                     <div class="field">
-                        <input type="text" name="number" placeholder="Your Phone Number">
+                        <input type="text" id="number" name="number" placeholder="Your Phone Number">
                     </div>
                     <div class="field">
-                        <textarea>I am interested in 6304 Mitchell Creek</textarea>
+                        <textarea id="message" name="message">I am interested in 6304 Mitchell Creek</textarea>
                     </div>
                     <button class="ui basic button" type="submit">Submit</button>
+                    <div class="field" style="visibility: hidden">
+                        <textarea id="property" name="property">Mitchell Creek</textarea>
+                    </div>
                 </form>
                 <br/>
             </div>

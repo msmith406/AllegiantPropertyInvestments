@@ -45,18 +45,18 @@
                 <br/>
 
                 <div class="eight wide column">
-                    <form class="ui form">
+                    <form id="gform" method="POST" class="ui form" action="https://script.google.com/macros/s/AKfycbydFhrLdldgJB1Oh5-S-kt46RfOHGk5m9HquQ7sH-ZHmeiXdII/exec">
                         <div class="field">
-                            <input type="text" name="name" placeholder="Your Name">
+                            <input type="text" id="name" name="name" placeholder="Your Name">
                         </div>
                         <div class="field">
-                            <input type="text" name="email" placeholder="Your Email">
+                            <input type="text" id="email" name="email" placeholder="Your Email">
                         </div>
                         <div class="field">
-                            <input type="text" name="number" placeholder="Your Phone Number">
+                            <input type="text" id="number" name="number" placeholder="Your Phone Number">
                         </div>
-                        <div class="field">
-                            <textarea></textarea>
+                        <div class="field" id="message">
+                            <textarea id="message" name="message" placeholder="Message"></textarea>
                         </div>
                         <button class="ui basic button" type="submit">Submit</button>
                     </form>
