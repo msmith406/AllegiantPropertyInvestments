@@ -3,10 +3,12 @@
 <head>
     <meta charset="utf-8">
     <title>Past Projects</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="BuyScript.js"></script>
     <link rel="stylesheet" type="text/css" href=https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css>
 </head>
 
-<body>
+<body onload=processPastProjects();>
     <div class="ui container">
         <div class="ui secondary pointing menu">
             <a class="item" href=index.html>
@@ -38,42 +40,35 @@
                 <h1 style="text-align:center;">Our Previous Projects</h1>
                 <br/><br/>
                 <div class="ui two stackable cards">
-                    <div class="ui fluid card">
-                        <a class="image" href="#">
-                            <div class="ui red huge ribbon label">SOLD
-                            </div>
-                            <img src="images/Newton.jpg">
+                     <div class="ui fluid card">
+                        <a class="image" id="picture1">
                         </a>
                         <div class="content">
-                            <a class="header" href="#">Newton Drive</a>
+                            <a class="header" id="propertyName1"></a>
                             <div class="meta">
-                                <a>4 bed | 3 bath | 1977 sq.ft.</a>
+                                <a id="specs1"></a>
                             </div>
                         </div>
                     </div>
+
                     <div class="ui fluid card">
-                        <a class="image" href="#">
-                            <div class="ui red huge ribbon label">SOLD
-                            </div>
-                            <img src="images/tanglewood.jpg">
+                        <a class="image" id="picture2">
                         </a>
                         <div class="content">
-                            <a class="header" href="#">Tanglewood</a>
+                            <a class="header" id="propertyName2"></a>
                             <div class="meta">
-                                <a>3 bed | 2.5 bath | 1852 sq.ft.</a>
+                                <a id="specs2"></a>
                             </div>
                         </div>
                     </div>
+
                     <div class="ui fluid card">
-                        <a class="image" href="#">
-                            <div class="ui red huge ribbon label">SOLD
-                            </div>
-                            <img src="images/mountainRidge.jpg">
+                        <a class="image" id="picture3">
                         </a>
                         <div class="content">
-                            <a class="header" href="#">Mountain Ridge</a>
+                            <a class="header" id="propertyName3"></a>
                             <div class="meta">
-                                <a>3 bed | 2.5 bath | 2446 sq.ft.</a>
+                                <a id="specs3"></a>
                             </div>
                         </div>
                     </div>

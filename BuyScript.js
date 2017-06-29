@@ -19,7 +19,7 @@ var OliverCrest = new Property("Oliver Crest", "images/oliverCrest.jpg", "3", "1
 var Warren = new Property("Warren Road", "images/WarrenRd.jpg", "3", "2", "1092", "Coming Soon", "#");
 var Newton = new Property("Newton Drive", "images/Newton.jpg", "4", "3", "1977", "SOLD", "#");
 var Tanglewood = new Property("Tanglewood", "images/tanglewood.jpg", "3", "2.5", "1852", "SOLD", "#");
-var MountainRidge = new Property("Mountain Ridge", "images/mountainRidge.jpg", "3", "2.5", "2446", "SOLD", "3");
+var MountainRidge = new Property("Mountain Ridge", "images/mountainRidge.jpg", "3", "2.5", "2446", "SOLD", "#");
 
 var card1 = ["propertyName1", "specs1", "picture1"];
 var card2 = ["propertyName2", "specs2", "picture2"];
@@ -31,6 +31,7 @@ var card6 = ["propertyName6", "specs6", "picture6"];
 
 var houseArray = [Mitchell, OliverCrest, Warren, Newton, Tanglewood, MountainRidge];
 var cardsArray = [card1, card2, card3, card4, card5, card6];
+var soldArray = [Newton, Tanglewood, MountainRidge];
 
 
 function CreateHouseCard(House, idArray) {
@@ -72,10 +73,18 @@ function getColor(price) {
     return color;
 }
 
-$("Buy.html").ready(function () {
-    LoadHouses(houseArray, cardsArray, 6);
-});
 
-$("index.html").ready(function(){
+
+$(document).ready(function(){});
+
+function processBuy() {
+    LoadHouses(houseArray, cardsArray, 6);
+}
+
+function processIndex(){
     LoadHouses(houseArray, cardsArray, 2);
-});
+}
+
+function processPastProjects(){
+    LoadHouses(soldArray, cardsArray, soldArray.length);
+}
