@@ -1,12 +1,11 @@
 
 
 
-function DetailedProperty(PropertyObj, addressPart1, addressPart2, description, bedBath) {
+function DetailedProperty(PropertyObj, addressPart1, addressPart2, description) {
     this.PropertyObj = PropertyObj;
     this.addressPart1 = addressPart1;
     this.addressPart2 = addressPart2;
     this.description = description;
-    this.bedBath = bedBath;
 }
 
 var MitchellDetailed = new DetailedProperty(Mitchell, "6304 Mitchell Creek Dr", "Flowery Branch, GA 30542", 
@@ -14,8 +13,7 @@ var MitchellDetailed = new DetailedProperty(Mitchell, "6304 Mitchell Creek Dr", 
     " This low maintenance home has wide plank bamboo flooring, new lighting fixtures and a fresh coat of paint throughout."+
     " The sparkling kitchen offers brand new granite countertops, stainless steel appliances and new plumbing fixtures."+
     " The large backyard provides plenty of room to host guests, build that tree house or a game of hide and seek."+
-    " Minutes from Greenspace, Park, NEGA Medical, Mall of GA, Lanier Islands, boat ramps, I-985 & 85. FHA offers accepted 6/27.",
-    "Bedrooms: 3 <br/> Bathrooms: 2");
+    " Minutes from Greenspace, Park, NEGA Medical, Mall of GA, Lanier Islands, boat ramps, I-985 & 85. FHA offers accepted 6/27.");
 
 
     function processPropertyDetail(){
@@ -28,6 +26,5 @@ var MitchellDetailed = new DetailedProperty(Mitchell, "6304 Mitchell Creek Dr", 
         var src = document.getElementById("picture");
         src.appendChild(img);
         document.getElementById("description").innerHTML=MitchellDetailed.description;
-        document.getElementById("bedBath").innerHTML=MitchellDetailed.bedBath;
     }
 

@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>Mitchell Creek</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href=https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
     <script src="BuyScript.js"></script>
     <script src="PropertyDetail.js"></script>
-    <link rel="stylesheet" type="text/css" href=https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css>
 </head>
 
 <body onload=processPropertyDetail();>
@@ -49,118 +50,124 @@
                 <h1 style="text-align:right;" id="price">
                 </h1>
             </div>
-            <div class="twelve wide computer sixteen wide mobile column">
-                <a class="ui fluid bordered image" id="picture"></a>
-                <br/>
-                <h3>Property Description</h3>
-                <div class="ui divider"></div>
-                <p id="description"></p>
-                <br/>
-                <h3>Interior Features</h3>
-                <div class="ui horizontal segments">
-                    <div class="ui segment">
-                        <div><b>Bed & Bath</b><div id="bedBath"></div></div> <br/>
+            <div class="two stackable column row">
+                <div class="twelve wide computer sixteen wide mobile column">
+                    <a class="ui fluid bordered image" id="picture"></a>
+                    <br/>
+                    <h3>Property Description</h3>
+                    <div class="ui divider"></div>
+                    <p id="description"></p>
+                    <br/>
+                    <div class="ui top attached tabular menu">
+                        <a class="item active" data-tab="first">Interior Features</a>
+                        <a class="item" data-tab="second">Exterior Features</a>
+                        <a class="item" data-tab="third">Community</a>
+                    </div>
+                    <div class="ui bottom attached tab segment active" data-tab="first">
+                        <div class="ui horizontal segments">
+                            <div class="ui segment">
+                                <div><b>Bed & Bath</b><br/> Bedrooms: 3<br/> Bathrooms: 2
+                                </div> <br/>
 
-                        <div><b>Heating & Cooling</b></div>
-                        <div> Heating: Forced air, electric </div>
-                        <div> Cooling: Central </div><br/>
+                                <div><b>Heating & Cooling</b></div>
+                                <div> Heating: Forced air, electric </div>
+                                <div> Cooling: Central </div><br/>
 
-                        <div><b>Appliances</b></div>
-                        <div> Appliances included: Dishwasher, Microwave, Range/Oven</div>
+                                <div><b>Appliances</b></div>
+                                <div> Appliances included: Dishwasher, Microwave, Range/Oven</div>
+                            </div>
+                            <div class="ui segment">
+                                <div><b>Flooring</b></div>
+                                <div> Floor size: 1,188 sqft</div>
+                                <div>Flooring: Bamboo</div><br/>
+                                <div><b>Other Interior Features</b></div>
+                                <div> Fireplace</div>
+                                <div> Ceiling Fan</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="ui segment">
-                        <div><b>Flooring</b></div>
-                        <div> Floor size: 1,188 sqft</div> 
-                        <div>Flooring: Bamboo</div><br/>
-                            <div><b>Other Interior Features</b></div>
-                            <div> Fireplace</div>
-                            <div> Ceiling Fan</div>
+                    <div class="ui bottom attached tab segment" data-tab="second">
+                        <div class="ui horizontal segments">
+                            <div class="ui segment">
+                                <p><b>Type, Style, & Materials</b><br/> Structure type: Single Family Ranch<br/> Roof Type:
+                                    Composition<br/> Exterior material: Vinyl, Wood <br/> Foundation type: Masonry <br/>                                    Stories: 1<br/> Parking: Garage, 324 sqft<br/>
+                                </p>
+                            </div>
+                            <div class="ui segment">
+                                <p><b>Dates</b><br/> Last remodel year: 2013<br/> Built: 1996<br/><br/>
+                                    <b>Other Exterior Features</b><br/> Porch & Patio<br/> Lot: 0.84 acres<br/>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div><br/>
-                <h3>Exterior Features</h3>
-                <div class="ui horizontal segments">
-                    <div class="ui segment">
-                        <p><b>Type, Style, & Materials</b><br/> Structure type: Single Family Ranch<br/> Roof Type: Composition<br/>                            Exterior material: Vinyl, Wood <br/> Foundation type: Masonry <br/> Stories: 1<br/> Parking:
-                            Garage, 324 sqft<br/>
-                        </p>
-                    </div>
-                    <div class="ui segment">
-                        <p><b>Dates</b><br/> Last remodel year: 2013<br/> Built: 1996<br/><br/>
-                            <b>Other Exterior Features</b><br/> Porch & Patio<br/> Lot: 0.84 acres<br/>
-                        </p>
-                    </div>
-                </div><br/>
-                <h3>Community</h3>
-                <div class="ui horizontal segments">
-                    <div class="ui segment">
-                        <b>Schools</b><br/> Elementary school: Friendship<br/> Middle School: C.W. Davis <br/> High School:
-                        Flowery Branch<br/>
+                    <div class="ui bottom attached tab segment" data-tab="third">
+                        <div class="ui segment">
+                            <b>Schools</b><br/> Elementary school: Friendship<br/> Middle School: C.W. Davis <br/> High School:
+                            Flowery Branch<br/>
+                        </div>
                     </div>
 
+                    <br/>
+                    <h3>Design Notes From Anita</h3>
+                    <div class="ui styled fluid accordion">
+                        <div class="active title">
+                            <i class="icon"></i> Flooring
+                        </div>
+                        <div class="active content">
+                            <p>I chose a beautiful wide-plank bamboo for the flooring in this house. After seeing other hadwoods
+                                become easily damaged, I sought out this durable and functional game-changer. Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit. Error ratione quos nihil accusantium ex tempora,
+                                molestiae eos cupiditate asperiores soluta excepturi beatae, nisi debitis consectetur numquam
+                                cumque libero, rerum magni.
+                            </p>
+                        </div>
+                        <div class="title">
+                            <i class="sun icon"></i> Lighting
+                        </div>
+                        <div class="content">
+                            <p class="transition hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto dolorum excepturi eaque
+                                pariatur voluptatibus expedita totam repellendus at, iusto, consequatur quis enim quas debitis
+                                officiis eos modi placeat! Autem.</p>
+                        </div>
+                        <div class="title">
+                            <i class="icon"></i> Kitchen
+                        </div>
+                        <div class="content">
+                            <p class="transition hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nisi qui dicta veritatis. Dolor,
+                                ducimus magni corrupti tenetur placeat quisquam totam doloribus nihil, vero accusamus ad!
+                                Voluptates repellat deserunt explicabo.
+                        </div>
+                    </div>
+                    <br/><br/>
                 </div>
-                <br/>
-                <h3>Notes from Anita, our Lead Designer</h3>
-                <div class="ui styled fluid accordion">
-                    <div class="active title">
-                        <i class="tasks icon"></i> Flooring
-                    </div>
-                    <div class="active content">
-                        <p>I chose a beautiful wide-plank bamboo for the flooring in this house. After seeing other hadwoods
-                            become easily damaged, I sought out this durable and functional game-changer. Lorem ipsum dolor
-                            sit amet, consectetur adipisicing elit. Error ratione quos nihil accusantium ex tempora, molestiae
-                            eos cupiditate asperiores soluta excepturi beatae, nisi debitis consectetur numquam cumque libero,
-                            rerum magni.
-                        </p>
-                    </div>
-                    <div class="title">
-                        <i class="sun icon"></i> Lighting
-                    </div>
-                    <div class="content">
-                        <p class="transition hidden">There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed
-                            of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
-                    </div>
-                    <div class="title">
-                        <i class="food icon"></i> Kitchen
-                    </div>
-                    <div class="content">
-                        <p class="transition hidden">Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or
-                            shelters.
-                        </p>
-                        <p class="transition hidden">A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows
-                            you to assess the pedigree and upbringing of your dog before choosing to take it home. Lastly,
-                            finding your dog from a shelter, helps give a good home to a dog who may not find one so readily.</p>
-                    </div>
+
+
+
+
+
+                <div class="four wide computer sixteen wide mobile column">
+                    <h3 style="text-align:center">Contact us about this listing:</h3>
+                    <form id="gform" class="ui form" method="POST" action="https://script.google.com/macros/s/AKfycbydFhrLdldgJB1Oh5-S-kt46RfOHGk5m9HquQ7sH-ZHmeiXdII/exec">
+                        <div class="field">
+                            <input type="text" id="name" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="field">
+                            <input type="text" id="email" name="email" placeholder="Your Email">
+                        </div>
+                        <div class="field">
+                            <input type="text" id="number" name="number" placeholder="Your Phone Number">
+                        </div>
+                        <div class="field">
+                            <textarea id="message" name="message">I am interested in 6304 Mitchell Creek</textarea>
+                        </div>
+                        <button class="ui basic button" type="submit">Submit</button>
+                        <div class="field" style="visibility: hidden">
+                            <textarea id="property" name="property">Mitchell Creek</textarea>
+                        </div>
+                    </form>
+                    <br/>
                 </div>
-                <br/><br/>
             </div>
-
-
-
-
-
-            <div class="computer only four wide column">
-                <h3 style="text-align:center">Contact us about this listing:</h3>
-                <form id="gform" class="ui form" method="POST" action="https://script.google.com/macros/s/AKfycbydFhrLdldgJB1Oh5-S-kt46RfOHGk5m9HquQ7sH-ZHmeiXdII/exec">
-                    <div class="field">
-                        <input type="text" id="name" name="name" placeholder="Your Name">
-                    </div>
-                    <div class="field">
-                        <input type="text" id="email" name="email" placeholder="Your Email">
-                    </div>
-                    <div class="field">
-                        <input type="text" id="number" name="number" placeholder="Your Phone Number">
-                    </div>
-                    <div class="field">
-                        <textarea id="message" name="message">I am interested in 6304 Mitchell Creek</textarea>
-                    </div>
-                    <button class="ui basic button" type="submit">Submit</button>
-                    <div class="field" style="visibility: hidden">
-                        <textarea id="property" name="property">Mitchell Creek</textarea>
-                    </div>
-                </form>
-                <br/>
-            </div>
-
 
 
             <!--Footer-->
@@ -178,9 +185,10 @@
             <!--End Footer-->
 
         </div>
-
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js" />
+        <script>
+            $('.tabular.menu .item').tab();
+            $('.ui.accordion').accordion();
+        </script>
 </body>
 
 </html>
