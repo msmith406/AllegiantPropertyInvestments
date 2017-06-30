@@ -54,14 +54,41 @@
                 <div class="twelve wide computer sixteen wide mobile column">
                     <div class="ui fluid special card">
                         <div class="blurring dimmable image" id="picture">
+                            <a class="ui huge right corner label">
+                                <i class="inverted blue grid layout icon"></i>
+                            </a>
                             <div class="ui inverted dimmer">
                                 <div class="content">
                                     <div class="center">
-                                        <a href = "index.html" class="ui primary button" >View Gallery</a>
+                                        <a class="ui primary test button">View Gallery</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="ui long modal">
+                        <i class="close icon"></i>
+                        <div class="header">
+                            Gallery
+                        </div>
+                        <div class="ui two medium stackable images">
+                            <img src="images/MitchellCreek.jpg">
+                      
+                            <img src="images/MitchellCreek.jpg">
+                       
+                            <img src="images/MitchellCreek.jpg">
+                        
+                            <img src="images/MitchellCreek.jpg">
+                        </div>
+                        <!--<div class="actions">
+                            <div class="ui black deny button">
+                                Nope
+                            </div>
+                            <div class="ui positive right labeled icon button">
+                                Yep, that's me
+                                <i class="checkmark icon"></i>
+                            </div>
+                        </div>-->
                     </div>
                     <br/>
                     <h3>Property Description</h3>
@@ -198,6 +225,7 @@
             $('.ui.accordion').accordion();
             $('.ui.dropdown').dropdown();
             $('.special.card .image').dimmer({ on: 'hover' });
+            $('.long.modal').modal('attach events', '.test.button', 'show');
         </script>
 </body>
 
