@@ -185,6 +185,7 @@
                         </div>
                         <div class="field">
                             <input type="text" id="email" name="email" placeholder="Your Email">
+                            <span id="email-invalid" style="display:none">Must be a valid email address</span>
                         </div>
                         <div class="field">
                             <input type="text" id="number" name="number" placeholder="Your Phone Number">
@@ -197,6 +198,9 @@
                             <textarea id="property" name="property">Mitchell Creek</textarea>
                         </div>
                     </form>
+                    <div style="display:none;" id="thankyou_message">
+                        <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+                    </div>
                     <br/>
                 </div>
             </div>
@@ -224,6 +228,7 @@
             $('.special.card .image').dimmer({ on: 'hover' });
             $('.long.fullscreen.modal').modal('attach events', '.test.button', 'show');
         </script>
+        <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 </body>
 
 </html>
