@@ -64,11 +64,11 @@ function LoadHouses(Houses, Cards, numOnPage) {
 
 //Sets the banner color over the image
 function getColor(price) {
-    var color = "blue";
+    var color = "teal";
     if (price == "SOLD") {
-        color = "red";
+        color = "orange";
     } else if (price == "Coming Soon") {
-        color = "green";
+        color = "olive";
     }
     return color;
 }
