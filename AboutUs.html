@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>Our Story</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href=https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
 </head>
 
 <body>
@@ -18,7 +20,7 @@
             <a href="Sell.html" class="item">
                     Sell
                 </a>
-            <div class="ui simple dropdown item">
+            <div class="ui pointing dropdown item">
                 <span class="text"><b>About Us</b></span>
                 <i class="dropdown icon"></i>
                 <div class=" simple menu">
@@ -33,14 +35,15 @@
 
         </div>
         <div class="two column ui grid">
-        <div class="twelve wide computer sixteen wide mobile column">
-            <br/><br/>
-            <h1 style="text-align:center;">Our Story </h1>
-            <br/><br/>
-        </div>
-        <div class="four wide computer only column">
+            <div class="twelve wide computer sixteen wide mobile column">
+                <br/><br/>
+                <h1 style="text-align:center;">Our Story </h1>
+                <br/><br/>
+            </div>
+            <div class="four wide computer only column">
 
-            </div></div>
+            </div>
+        </div>
         <div class="two column ui grid">
             <div class="twelve wide computer sixteen wide mobile column">
                 <img class="ui fluid bordered image" src="images/CraigAnita.JPG">
@@ -113,10 +116,11 @@
         <!--End Footer-->
 
 
-    
-    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js" />
+    </div>
+    <script>
+        $('.ui.dropdown').dropdown();
+    </script>
 </body>
 
 </html>
