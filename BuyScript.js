@@ -88,3 +88,10 @@ function processIndex(){
 function processPastProjects(){
     LoadHouses(soldArray, cardsArray, soldArray.length);
 }
+
+function UserAction() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "http://www.zillow.com/webservice/GetUpdatedPropertyDetails.htm", false);
+    xhttp.setRequestHeader("Content-type", "text/xml");
+    xhttp.send();
+}
