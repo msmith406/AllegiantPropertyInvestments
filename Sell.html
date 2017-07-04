@@ -55,40 +55,41 @@
                     </p>
                 </div>
                 <div class="eight wide column">
-                    <form class="ui form">
+                    <form id="gform" class="ui form" method="POST" action="https://script.google.com/macros/s/AKfycbxHpjXPodmaTqWeoCu8kN5CYAaCLG2R_LU78Y-Dm803Iti7TA/exec">
                         <h4 class="ui dividing header">Your Information</h4>
                         <div class="field">
                             <label>Name</label>
                             <div class="two fields">
                                 <div class="field">
-                                    <input type="text" placeholder="First Name">
+                                    <input type="text" id="firstName" name="firstName" placeholder="First Name">
                                 </div>
                                 <div class="field">
-                                    <input type="text" placeholder="Last Name">
+                                    <input type="text" placeholder="Last Name" id="lastName" name="lastName">
                                 </div>
                             </div>
                         </div>
                         <div class="field">
                             <label>Phone Number</label>
-                            <input type="text" placeholder="555-555-5555">
+                            <input type="text" placeholder="555-555-5555" id="number" name="number">
                         </div>
                         <div class="field">
                             <label>Email</label>
-                            <input type="text" placeholder="interestedSeller@gmail.com">
+                            <input type="text" placeholder="interestedSeller@gmail.com" id="email" name="email">
+                            <span id="email-invalid" style="display:none">Must be a valid email address</span>
                         </div>
                         <h4 class="ui dividing header">Property Information</h4>
                         <div class="field">
                             <label>Address</label>
-                            <input type="text" placeholder="1234 Lake Lanier Lane">
+                            <input type="text" placeholder="1234 Lake Lanier Lane" id="address" name="address">
                         </div>
                         <div class="three fields">
                             <div class="field">
                                 <label>City</label>
-                                <input type="text" placeholder="">
+                                <input type="text" placeholder="" id="city" name="city">
                             </div>
                             <div class="field">
                                 <label>State</label>
-                                <select class="ui fluid dropdown">
+                                <select class="ui fluid dropdown" id="state" name="state">
                                         <option value="GA">Georgia</option>
                                         <option value="AL">Alabama</option>
                                         <option value="AK">Alaska</option>
@@ -144,31 +145,34 @@
                             </div>
                             <div class="field">
                                 <label>Zip Code</label>
-                                <input type="text" placeholder="">
+                                <input type="text" placeholder="" id="zip" name="zip">
                             </div>
                         </div>
                         <div class="two fields">
                             <div class="field">
                                 <label>Estimated Value</label>
-                                <input type="text">
+                                <input type="text" id="value" name="value">
                             </div>
                             <div class="field">
                                 <label>Approx. SqFt</label>
-                                <input type="text">
+                                <input type="text" name="SqFt" id="sqft">
                             </div>
                         </div>
                         <div class="two fields">
                             <div class="field">
                                 <label>How many Bedrooms?</label>
-                                <input type="text">
+                                <input type="text" name="bedrooms" id="bedrooms">
                             </div>
                             <div class="field">
                                 <label>How many Bathrooms?</label>
-                                <input type="text">
+                                <input type="text" name="bathrooms" id="bathrooms">
                             </div>
                         </div>
-                        <div class="ui right floated button" tabindex="0">Submit</div>
+                        <button class="ui basic button" type="submit">Submit</button>
                     </form>
+                    <div style="display:none;" id="thankyou_message">
+                        <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+                    </div>
                 </div>
             </div>
             <!--Footer-->
@@ -190,6 +194,7 @@
     <script>
         $('.ui.dropdown').dropdown();
     </script>
+    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 </body>
 
 </html>
