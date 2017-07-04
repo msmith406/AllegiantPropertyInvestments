@@ -111,59 +111,68 @@
                 </div>
             </div>
             <div class="computer only four wide column">
-                <div class="ui segment">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi cumque voluptatem assumenda tempora
-                        voluptas modi deleniti necessitatibus minima eum neque quaerat dolorum quibusdam labore cum, repellendus
-                        molestiae illum. Doloremque, consequatur.</p>
-                </div>
-                <div class="container">
-                    <div class="ui card">
-                        <div class="ui fluid horizontal label">Find houses in your area.<br/>
-                            <div class="ui search">
-                                <div class="ui icon input">
-                                    <input class="prompt" type="text" placeholder="Search neighborhoods...">
-                                    <i class="search icon"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><br/>
-                <div class="container">
+                 <div class="ui segment">
                     <div class="ui cards">
                         <div class="card">
                             <div class="content">
-                                <div class="header">Functionally Floored</div>
+                                <div class="header">Questions?</div>
                                 <div class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae cumque consequatur, praesentium vel officiis quaerat incidunt
-                                    animi illum ullam impedit similique maxime vero.
+                                    Get in touch with us. Anytime. We'd love to hear from you.
                                 </div>
                             </div>
-                            <div class="ui bottom attached button">
-                                <i class="chevron right icon"></i> Read More
+                            <a href="ContactUs.html" class="ui bottom attached basic button">
+                                <i class="olive chevron right icon"></i> <font color="olive"> <b>&nbsp; Read More</b></font>
+                            </a>
+                        </div>
+                        <div class="ui fluid card">
+                            <h3>&nbsp;&nbsp;&nbsp;Looking to Sell?</h3>
+                            <a class="image">
+                                <img src="images/doorKey.jpeg">
+                                </a>
+                            <div class="content">
+                                <div class="description">
+                                    We'd love to find a solution for you. We're always looking for homes to bring new life to.
+                                </div>
                             </div>
+                            <a href="Sell.html" class="ui bottom attached basic button">
+                                <i class="teal chevron right icon"></i><font color="teal"> <b>&nbsp; Sell My House!</b></font>
+                            </a>
                         </div>
                         <div class="card">
                             <div class="content">
-                                <div class="header">Carefully Crafted</div>
+                                <div class="header">Who are we?</div>
                                 <div class="description">
-                                    Lorem ipsum dolor sit amet, repellendus error debitis obcaecati enim dolore. Eos!
+                                    We're a hard-working team dedicated to making functional, beautiful homes for the Northeast Georgia Community. We can't wait
+                                    to work with you.
                                 </div>
                             </div>
-                            <div class="ui bottom attached button">
-                                <i class="chevron right icon"></i> Read More
-                            </div>
+                            <a href="AboutUs.html" class="ui bottom attached basic button">
+                                <i class="teal chevron right icon"></i> <font color="teal"> <b>&nbsp; Read More</b></font>
+                            </a>
                         </div>
                         <div class="card">
                             <div class="content">
                                 <div class="header">Stay Updated</div>
                                 <div class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae consectetur eos omnis perferendis suscipit beatae dolor
-                                    quae libero veniam ex pariatur.
+                                    Be the first to know when one of our houses goes on the market.
                                 </div>
                             </div>
-                            <div class="ui bottom attached button">
-                                <i class="mail icon"></i> Join Our Mailing List
+                            <div class="ui test bottom attached basic button">
+                                <i class="olive mail icon"></i> <font color="olive"><b>Join Our Mailing List</b></font>
                             </div>
+                        </div>
+                        <div class="ui fluid card">
+                            <a class="image">
+                                <img src="images/design.jpeg">
+                                </a>
+                            <div class="content">
+                                <div class="description">
+                                   Want to know more about our renovation process? Check out Anita's Blog for inside details about our design decisions.
+                                </div>
+                            </div>
+                            <a href="Blog.html" class="ui bottom attached basic button">
+                                <i class="teal chevron right icon"></i><font color="teal"> <b>&nbsp; Blog</b></font>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -182,12 +191,39 @@
                 </h5>
             </div>
             <!--End Footer-->
+            <div class="ui modal">
+                <i class="close icon"></i>
+                <div class="header">
+                    Join Our Mailing List
+                </div>
+                <div class="content">
+                    <form id="gform" method="POST" class="ui form" action="https://script.google.com/macros/s/AKfycbydFhrLdldgJB1Oh5-S-kt46RfOHGk5m9HquQ7sH-ZHmeiXdII/exec">
+                        <div class="field">
+                            <input type="text" id="name" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="field">
+                            <input type="text" id="email" name="email" placeholder="Your Email">
+                            <span id="email-invalid" style="display:none">Must be a valid email address</span>
+                        </div>
+                        <button class="ui right floated blue button" tabindex="0" type="submit">Submit</button>
+                        <div class="field" style="visibility: hidden">
+                            <textarea rows="1" id="property" name="property">Subscription</textarea>
+                        </div>
+                    </form>
+                    <div style="display:none;" id="thankyou_message">
+                        <h2><em>Thanks for subscribing!</em> </h2>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
     <script>
         $('.ui.dropdown').dropdown();
+            $('.ui.modal').modal('attach events', '.test.button', 'show');
     </script>
+        <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+
 </body>
 
 </html>

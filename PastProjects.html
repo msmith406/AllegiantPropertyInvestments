@@ -95,7 +95,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
             <div class="computer only four wide column">
@@ -145,11 +145,10 @@
                             <div class="content">
                                 <div class="header">Stay Updated</div>
                                 <div class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae consectetur eos omnis perferendis suscipit beatae dolor
-                                    quae libero veniam ex pariatur.
+                                    Be the first to know when one of our houses goes on the market.
                                 </div>
                             </div>
-                            <div class="ui bottom attached button">
+                            <div class="ui test bottom attached olive button">
                                 <i class="mail icon"></i> Join Our Mailing List
                             </div>
                         </div>
@@ -170,12 +169,38 @@
                 </h5>
             </div>
             <!--End Footer-->
+            <div class="ui modal">
+                <i class="close icon"></i>
+                <div class="header">
+                    Join Our Mailing List
+                </div>
+                <div class="content">
+                    <form id="gform" method="POST" class="ui form" action="https://script.google.com/macros/s/AKfycbydFhrLdldgJB1Oh5-S-kt46RfOHGk5m9HquQ7sH-ZHmeiXdII/exec">
+                        <div class="field">
+                            <input type="text" id="name" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="field">
+                            <input type="text" id="email" name="email" placeholder="Your Email">
+                            <span id="email-invalid" style="display:none">Must be a valid email address</span>
+                        </div>
+                        <button class="ui right floated blue button" tabindex="0" type="submit">Submit</button>
+                        <div class="field" style="visibility: hidden">
+                            <textarea rows="1" id="property" name="property">Subscription</textarea>
+                        </div>
+                    </form>
+                    <div style="display:none;" id="thankyou_message">
+                        <h2><em>Thanks for subscribing!</em> </h2>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
     <script>
         $('.ui.dropdown').dropdown();
+            $('.ui.modal').modal('attach events', '.test.button', 'show');
     </script>
+        <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 </body>
 
 </html>
