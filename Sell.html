@@ -36,18 +36,15 @@
         <div class="ui grid">
             <div class="two stackable column row">
                 <div class="eight wide column">
-                    <h2>Sell your home right meow</h2><br/>
-                    <p style="font-size:18px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quam labore ipsam. Ex adipisci, quas
-                        facilis voluptatibus voluptatum, esse quisquam ratione sapiente obcaecati, nam perspiciatis veniam.
-                        Cupiditate expedita labore, ullam.
-                    </p>
-                    <p style="font-size:18px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quam labore ipsam. Ex adipisci, quas
+                    <h2>Sell your home right meow</h2>
+                    <img src="images/prettyHouse.jpeg"></img>
+                    <p style="font-size:16px"><br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quam labore ipsam. Ex adipisci, quas
                         facilis voluptatibus voluptatum, esse quisquam ratione sapiente obcaecati, nam perspiciatis veniam.
                         Cupiditate expedita labore, ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
                         suscipit, ex consequatur explicabo quae, quam dolorem natus similique dolorum id, provident dolores
                         delectus dignissimos corporis libero ad deserunt a eaque.
                     </p>
-                    <p style="font-size:18px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quam labore ipsam. Ex adipisci, quas
+                    <p style="font-size:16px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quam labore ipsam. Ex adipisci, quas
                         facilis voluptatibus voluptatum, esse quisquam ratione sapiente obcaecati, nam perspiciatis veniam.
                         Cupiditate expedita labore, ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus
                         unde aliquam nobis, in pariatur assumenda sapiente? Mollitia, voluptatem sint veniam quos possimus
@@ -55,41 +52,42 @@
                     </p>
                 </div>
                 <div class="eight wide column">
-                    <form id="gform" class="ui form" method="POST" action="https://script.google.com/macros/s/AKfycbxHpjXPodmaTqWeoCu8kN5CYAaCLG2R_LU78Y-Dm803Iti7TA/exec">
-                        <h4 class="ui dividing header">Your Information</h4>
-                        <div class="field">
-                            <label>Name</label>
-                            <div class="two fields">
-                                <div class="field">
-                                    <input type="text" id="firstName" name="firstName" placeholder="First Name">
-                                </div>
-                                <div class="field">
-                                    <input type="text" placeholder="Last Name" id="lastName" name="lastName">
+                    <div class="olive ui segment">
+                        <form id="gform" class="ui form" method="POST" action="https://script.google.com/macros/s/AKfycbxHpjXPodmaTqWeoCu8kN5CYAaCLG2R_LU78Y-Dm803Iti7TA/exec">
+                            <h4 class="ui dividing header">Your Information</h4>
+                            <div class="field">
+                                <label>Name</label>
+                                <div class="two fields">
+                                    <div class="field">
+                                        <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                                    </div>
+                                    <div class="field">
+                                        <input type="text" placeholder="Last Name" id="lastName" name="lastName">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="field">
-                            <label>Phone Number</label>
-                            <input type="text" placeholder="555-555-5555" id="number" name="number">
-                        </div>
-                        <div class="field">
-                            <label>Email</label>
-                            <input type="text" placeholder="interestedSeller@gmail.com" id="email" name="email">
-                            <span id="email-invalid" style="display:none">Must be a valid email address</span>
-                        </div>
-                        <h4 class="ui dividing header">Property Information</h4>
-                        <div class="field">
-                            <label>Address</label>
-                            <input type="text" placeholder="1234 Lake Lanier Lane" id="address" name="address">
-                        </div>
-                        <div class="three fields">
                             <div class="field">
-                                <label>City</label>
-                                <input type="text" placeholder="" id="city" name="city">
+                                <label>Phone Number</label>
+                                <input type="text" placeholder="555-555-5555" id="number" name="number">
                             </div>
                             <div class="field">
-                                <label>State</label>
-                                <select class="ui fluid dropdown" id="state" name="state">
+                                <label>Email</label>
+                                <input type="text" placeholder="interestedSeller@gmail.com" id="email" name="email">
+                                <span id="email-invalid" style="display:none">Must be a valid email address</span>
+                            </div>
+                            <h4 class="ui dividing header">Property Information</h4>
+                            <div class="field">
+                                <label>Address</label>
+                                <input type="text" placeholder="1234 Lake Lanier Lane" id="address" name="address">
+                            </div>
+                            <div class="three fields">
+                                <div class="field">
+                                    <label>City</label>
+                                    <input type="text" placeholder="" id="city" name="city">
+                                </div>
+                                <div class="field">
+                                    <label>State</label>
+                                    <select class="ui fluid dropdown" id="state" name="state">
                                         <option value="GA">Georgia</option>
                                         <option value="AL">Alabama</option>
                                         <option value="AK">Alaska</option>
@@ -142,36 +140,37 @@
                                         <option value="WI">Wisconsin</option>
                                         <option value="WY">Wyoming</option>
                                         </select>
+                                </div>
+                                <div class="field">
+                                    <label>Zip Code</label>
+                                    <input type="text" placeholder="" id="zip" name="zip">
+                                </div>
                             </div>
-                            <div class="field">
-                                <label>Zip Code</label>
-                                <input type="text" placeholder="" id="zip" name="zip">
+                            <div class="two fields">
+                                <div class="field">
+                                    <label>Estimated Value</label>
+                                    <input type="text" id="value" name="value">
+                                </div>
+                                <div class="field">
+                                    <label>Approx. SqFt</label>
+                                    <input type="text" name="SqFt" id="sqft">
+                                </div>
                             </div>
+                            <div class="two fields">
+                                <div class="field">
+                                    <label>How many Bedrooms?</label>
+                                    <input type="text" name="bedrooms" id="bedrooms">
+                                </div>
+                                <div class="field">
+                                    <label>How many Bathrooms?</label>
+                                    <input type="text" name="bathrooms" id="bathrooms">
+                                </div>
+                            </div>
+                            <button class="ui basic button" type="submit">Submit</button>
+                        </form>
+                        <div style="display:none;" id="thankyou_message">
+                            <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
                         </div>
-                        <div class="two fields">
-                            <div class="field">
-                                <label>Estimated Value</label>
-                                <input type="text" id="value" name="value">
-                            </div>
-                            <div class="field">
-                                <label>Approx. SqFt</label>
-                                <input type="text" name="SqFt" id="sqft">
-                            </div>
-                        </div>
-                        <div class="two fields">
-                            <div class="field">
-                                <label>How many Bedrooms?</label>
-                                <input type="text" name="bedrooms" id="bedrooms">
-                            </div>
-                            <div class="field">
-                                <label>How many Bathrooms?</label>
-                                <input type="text" name="bathrooms" id="bathrooms">
-                            </div>
-                        </div>
-                        <button class="ui basic button" type="submit">Submit</button>
-                    </form>
-                    <div style="display:none;" id="thankyou_message">
-                        <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
                     </div>
                 </div>
             </div>
