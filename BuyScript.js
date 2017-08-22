@@ -13,7 +13,7 @@ function Property(name, picture, bed, bath, size, price, link) {
 
 
 var Mitchell = new Property("Mitchell Creek", "images/MitchellCreek.jpg", "3", "2",
-    "1188", "Under Contract", "Mitchell.html");
+    "1188", "SOLD", "#");
 var OliverCrest = new Property("Oliver Crest", "images/oliverCrest.jpg", "3", "1.5",
     "1040", "Coming Soon", "Oliver.html");
 var Warren = new Property("Warren Road", "images/WarrenRd.jpg", "3", "2", "1092", "Coming Soon", "Warren.html");
@@ -31,9 +31,9 @@ var card5 = ["propertyName5", "specs5", "picture5"];
 var card6 = ["propertyName6", "specs6", "picture6"];
 
 
-var houseArray = [Mitchell, Warren, OliverCrest, Newton, Sardis, Melbourne, Tanglewood, MountainRidge];
+var houseArray = [Warren, OliverCrest, Mitchell, Newton, Sardis, Melbourne, Tanglewood, MountainRidge];
 var cardsArray = [card1, card2, card3, card4, card5, card6];
-var soldArray = [Newton, Sardis, Melbourne, Tanglewood, MountainRidge];
+var soldArray = [Mitchell, Newton, Sardis, Melbourne, Tanglewood, MountainRidge];
 
 
 function CreateHouseCard(House, idArray) {
