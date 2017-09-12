@@ -15,9 +15,9 @@ var MitchellDetailed = new DetailedProperty(Mitchell, "6304 Mitchell Creek Dr", 
     " The large backyard provides plenty of room to host guests, build that tree house or a game of hide and seek."+
     " Minutes from Greenspace, Park, NEGA Medical, Mall of GA, Lanier Islands, boat ramps, I-985 & 85. FHA offers accepted 6/27.");
 
-var WarrenDetailed = new DetailedProperty(Warren, "4127 Warren Rd", "Flowery Branch, GA 30542", "Split level with 3 bedrooms, "
-+"2 baths, two car garage, deck across the back of house, private wooded backyard. "
-+"<b>This property is currently being renovated.</b>");
+var WarrenDetailed = new DetailedProperty(Warren, "4127 Warren Rd", "Flowery Branch, GA 30542", "Just completed renovation provides open living space." 
++"Fresh paint inside and out, new bamboo flooring, lighting, plumbing fixtures. "
++"Enormous deck for entertaining. Large wooded lot. Convenient to Interstates, shopping, , restaurants. Sought after schools.");
 
 var OliverDetailed = new DetailedProperty(OliverCrest, "3617 Oliver Crest Rd", "Gainesville, GA 30506", 
 "Perfect opportunity for first time home buyer or savvy investor. Easy to maintain all brick ranch home on almost 1/2 acre lot. "
